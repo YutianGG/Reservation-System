@@ -1,39 +1,46 @@
-
-    
-
-<!Doctype html>
-<html lang="en">
-    
+<!Doctype html>  
 <head>
     <meta charset="utf-8">
-    <title>登入</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>登入教室預約系統</title>
+        <link rel="stylesheet" href="Bootstrap/css/bootstrap.css"></link>
+        <script type="Bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+	    <script type="Bootstrap/js/bootstrap.bundle.js"></script>
+    
+</head> 
 <body>
-    
-    <table width="1920 height=1080">
-        <tr><td align="center" valign="center">
-        <form method="post">
-            <p>
-            帳號：
+    <br>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col align-items-center">   
+                <div class="text-center">
+                    <h1 class="modal-title "><strong>登入帳號</strong></h1>
+                </div>
             <br>
-            <input type="text" name="account" required>
-            <p>
-            密碼：
+                <div class="form-floating text-center  ">
+                    <label for="floatingInput"><strong>帳號：</strong></label>
+                    <input type="email" class="  w-50" id="floatingInput" placeholder="請輸入帳號">
+                </div>
             <br>
-            <input type="password" name="password" required>
-            <p>
-            <p></p><?php echo "$text"?><p>
-            <input type="submit" value="登入" name="submit">
-            <p></p>
-            <style>
-            a{
-                color: #2894FF;
-            }    
-            </style>
-            <a href="register.php">尚未有帳號? 點此註冊</a>
-        </form>
-            </td></tr>
-    </table> 
+                <div class="form-floating text-center">
+                    <label for="floatingPassword"><strong>密碼：</strong></label>
+                    <input type="password" class=" w-50" id="floatingPassword" placeholder="請輸入密碼">
+                </div>  
+            </div>
+           
+       
+        </div>
+        
+            <div class="col text-center"> 
+                <br>
+                <a href="#"><button type="button" class="btn btn-lg btn-success w-50 mx-0 mb-2"type="submit">教師登入</button></a>
+                <a href="#"><button type="button" class="btn btn-lg btn-primary w-50 mx-0 mb-2">管理員登入</button></a>
+                <a href="#"><button type="button" class="btn btn-lg btn-dark w-50 mx-0" data-bs-dismiss="modal">沒有帳號？註冊帳號！</button></div></a>
+            </div>
+    </div>
+        
+    </div>
     
-</body>
-</head>
+    
+
 </html>
