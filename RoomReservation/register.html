@@ -1,39 +1,50 @@
-
-    
-
 <!Doctype html>
-<html lang="en">
-    
 <head>
     <meta charset="utf-8">
-    <title>註冊</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>註冊帳號 - 教室預約系統</title>
+        <link rel="stylesheet" href="Bootstrap/css/bootstrap.css"></link>
+        <script type="Bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+	    <script type="Bootstrap/js/bootstrap.bundle.js"></script>
+    
+</head> 
+
 <body>
-    
-    <table width="1920 height=1080">
-        <tr><td align="center" valign="center">
-        <form method="post" align="center" >
-            姓名：<br><input type="text" name="username" required>
-            <p>
-            帳號：
+    <br>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col align-items-center">   
+                <div class="text-center">
+                    <h1 class="modal-title "><strong>註冊帳號</strong></h1>
+                </div>
             <br>
-            <input type="text" name="account" required>
-            <p>
-            密碼：
+                <div class="form-floating text-center  ">
+                    <label for="floatingInput"><strong>姓名：</strong></label>
+                    <input type="text" class="  w-50" id="floatingInput" placeholder="請輸入帳號">
+                </div>
             <br>
-            <input type="password" name="password" required>
-            <p>
-            <input type="submit" value="註冊" name="register">
-            <p></p>
-            <style>
-            a{
-                color: #2894FF;
-            }    
-            </style>
-            <a href= "login.php">已有帳號? 點此登入</a>
-        </form>
-            </td></tr>
-    </table> 
-    
+                <div class="form-floating text-center">
+                    <label for="floatingPassword"><strong>帳號：</strong></label>
+                    <input type="email" class=" w-50" id="floatingPassword" placeholder="請輸入密碼">
+                </div>  
+            
+            <br>
+                <div class="form-floating text-center">
+                    <label for="floatingPassword"><strong>密碼：</strong></label>
+                    <input type="password" class=" w-50" id="floatingPassword" placeholder="請輸入密碼">
+                </div>  
+            </div>
+        </div>
+        
+            <div class="col text-center"> 
+                <br>
+                <a href="#"><button type="button" class="btn btn-lg btn-success w-50 mx-0 mb-2"type="submit">註冊帳號</button></a>
+                <a href="#"><button type="button" class="btn btn-lg btn-dark w-50 mx-0" data-bs-dismiss="modal">已有帳號？登入帳號！</button></div></a>
+            </div>
+    </div>
+        
+    </div>
+
 </body>
-</head>
+
 </html>
